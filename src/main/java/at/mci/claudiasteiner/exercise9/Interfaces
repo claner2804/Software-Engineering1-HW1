@@ -1,0 +1,48 @@
+Let’s imagine we have the following interface and class:
+
+public interface StudentInteface {
+	// here my interface declaration
+}
+
+public class Student implements StudentInterface {
+	// here my class implementation
+}
+
+Given the instructions:
+StudentInterface sInt;
+Student student = new Student();
+
+discuss the following Java instructions:
+• sInt = null;
+• sInt = student;
+• student = sInt;
+• sInt = new StudentInterface();
+• sInt.someMethodInStudentInterface();
+_________________________________________________
+
+
+sInt = null; ist erlaubt, da null ein gültiger Wert für Referenztypen ist.
+sInt = student; zeigt, dass Student-Objekte einer Interface-Variable zugewiesen
+werden können, wenn Student das Interface StudentInterface implementiert.
+student = sInt; wird jedoch nicht erlaubt sein, weil sInt als Interface-Typ nicht
+garantieren kann, dass es tatsächlich ein Student-Objekt enthält – es könnte auch jedes
+andere Objekt sein, das StudentInterface implementiert.
+
+Erstellung von Interface-Objekten:
+		○ sInt = new StudentInterface(); wird einen Fehler verursachen, da man kein Objekt
+		direkt von einem Interface erzeugen kann. Interfaces definieren nur eine
+		„Vertragsschnittstelle“, sie implementieren aber keine Details, weshalb sie keine
+		Instanzen erzeugen können.
+
+Methodenaufrufe und Typcasting:
+		○ sInt.someMethodInStudentInterface(); ist zulässig, wenn StudentInterface diese Methode
+		definiert hat und sInt einem Objekt zugewiesen wurde, das die Methode implementiert.
+		Andernfalls muss ein Typecasting erfolgen, falls sInt spezifische Methoden von Student
+		aufrufen soll, die im Interface nicht deklariert sind.
+
+Zusammengefasst
+Diese Teilaufgabe zeigt, wie Interfaces und Klassen zusammenarbeiten, wie sie Typen für Variablen
+bereitstellen, wie sie die Nutzung bestimmter Methoden ermöglichen und wie die Zuweisung und
+Kompatibilität funktioniert. Sie hilft, ein besseres Verständnis von Polymorphie zu erlangen,
+da sie zeigt, wie ein Interface als „übergeordneter“ Typ fungieren kann, der von vielen Klassen
+geteilt wird.

@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"at.mci.claudiasteiner.exercise1"},{"l":"at.mci.claudiasteiner.exercise2"},{"l":"at.mci.claudiasteiner.exercise3"}];updateSearchResults();
