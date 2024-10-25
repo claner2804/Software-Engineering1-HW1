@@ -47,6 +47,11 @@ public class TestStudent {
 
         System.out.println("+++++++++++++++++++++++");
 
+        claudia.hasSameFluencyInJavaAs(dominic);
+
+        dominic.hasSameFluencyInJavaAs(sara);
+
+
     }
 
 }

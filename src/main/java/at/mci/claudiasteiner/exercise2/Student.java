@@ -71,4 +71,18 @@ public class Student {
                 "studentID = " + studentID + ", " +
                 "gender = " + gender + "\n";
     }
+
+
+    //Exercise4
+    public boolean hasSameFluencyInJavaAs(Student anotherStudent) {
+        if(this.proficiencyInJava != anotherStudent.getProficiencyInJava()) {
+            System.out.println("nah bihhh those guys dont matchhh");
+            return false;
+        }
+        System.out.println("yeahhh they got the same FluencyInJava");
+        return true;
+    }
+
+
+
 }
