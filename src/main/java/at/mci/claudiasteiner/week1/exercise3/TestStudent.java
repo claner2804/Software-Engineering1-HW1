@@ -1,6 +1,6 @@
-package at.mci.claudiasteiner.exercise3;
+package at.mci.claudiasteiner.week1.exercise3;
 
-import at.mci.claudiasteiner.exercise2.Student;
+import at.mci.claudiasteiner.week1.exercise2.Student;
 
 public class TestStudent {
     public static void main(String[] args) {

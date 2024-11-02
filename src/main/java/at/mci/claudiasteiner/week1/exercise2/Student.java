@@ -1,4 +1,4 @@
-package at.mci.claudiasteiner.exercise2;
+package at.mci.claudiasteiner.week1.exercise2;
 
 import java.util.Objects;
 import java.util.ArrayList;
@@ -11,11 +11,11 @@ import java.util.List;
  * Gruppe, Java-Kenntnisse, Geschlecht und Noten.
  */
 public class Student {
-    private String name;
-    private String group;
-    private int proficiencyInJava;
-    private int studentID;
-    private String gender;
+    protected String name;
+    protected String group;
+    protected int proficiencyInJava;
+    protected int studentID;
+    protected String gender;
     public static int counter = 0;
 
     //Exercise 6

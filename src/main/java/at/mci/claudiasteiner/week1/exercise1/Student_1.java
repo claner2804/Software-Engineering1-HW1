@@ -1,4 +1,4 @@
-package at.mci.claudiasteiner.exercise1;
+package at.mci.claudiasteiner.week1.exercise1;
 
 public class Student_1 {
     private String studentId; //is initialised with null
