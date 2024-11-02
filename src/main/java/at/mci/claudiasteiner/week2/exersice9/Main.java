@@ -9,7 +9,6 @@ public class Main {
         int a;
         int b;
 
-
         try {
             Scanner scanner = new Scanner(System.in);
             System.out.print("Enter an integer a: ");

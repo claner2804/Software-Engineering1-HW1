@@ -1,0 +1,10 @@
+"8. Create a method that asks for displaying the information about a certain
+number nrObjsToDisplay of students stored in the array created in item 7.
+Ensure that nrObjsToDisplay is a valid value and deal with the situation
+where nrObjsToDisplay is out of bound (i.e. it is either bigger than nrStud or
+negative) by defining your own exception class.
+You will need to throw and catch your exception objects when nrObjsToDisplay
+is out of bound"
+
+
+This Exercise 8 is added to the class StudentManager in exercise 7.
