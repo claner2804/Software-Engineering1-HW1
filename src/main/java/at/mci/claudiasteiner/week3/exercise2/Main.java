@@ -1,10 +1,8 @@
 package at.mci.claudiasteiner.week3.exercise2;
 import at.mci.claudiasteiner.week3.exercise2.ChemicalElementManager;
 
-
 public class Main {
     public static void main(String[] args) {
-
 
         // Singleton Pattern
         // Erstelle die Singleton-Instanz des Managers
@@ -33,7 +31,6 @@ public class Main {
         // Gebe Elemente aus
         chemicalElementManager.displayElement("H");
         chemicalElementManager.displayElement("He");
-
 
     }
 }
