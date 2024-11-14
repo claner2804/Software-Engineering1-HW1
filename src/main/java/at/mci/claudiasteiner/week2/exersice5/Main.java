@@ -6,8 +6,16 @@ If the exception is not caught, the program will terminate, and some_single_inst
 If the exception is caught in a catch block, then some_single_instruction_4 will be executed after the catch block completes.
  */
 
+/**
+ * The type Main.
+ */
 public class Main {
 
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
 
 

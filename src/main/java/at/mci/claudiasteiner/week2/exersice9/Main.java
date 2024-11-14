@@ -2,8 +2,16 @@ package at.mci.claudiasteiner.week2.exersice9;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+/**
+ * The type Main.
+ */
 public class Main {
 
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
 
         int a;

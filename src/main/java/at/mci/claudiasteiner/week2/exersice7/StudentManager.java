@@ -6,15 +6,26 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 import at.mci.claudiasteiner.week2.exersice8.OutOfBoundsException;
 
+/**
+ * The type Student manager.
+ */
 public class StudentManager {
     private Scanner scanner;
     private Student[] students;
 
+    /**
+     * Instantiates a new Student manager.
+     */
     public StudentManager() {
         scanner = new Scanner(System.in);
     }
 
-    // Method to get and validate the number of students
+    /**
+     * Gets number of students.
+     *
+     * @return the number of students
+     */
+// Method to get and validate the number of students
     public int getNumberOfStudents() {
         int nrStud = 0;
 
@@ -37,19 +48,33 @@ public class StudentManager {
         return nrStud;
     }
 
-    // Method to create an array of Student objects based on the number provided
+    /**
+     * Create student array.
+     *
+     * @param nrStud the nr stud
+     */
+// Method to create an array of Student objects based on the number provided
     public void createStudentArray(int nrStud) {
         students = new Student[nrStud];
         System.out.println("Created an array for " + nrStud + " students.");
     }
 
-    // Getter for the Student array
+    /**
+     * Get students student [ ].
+     *
+     * @return the student [ ]
+     */
+// Getter for the Student array
     public Student[] getStudents() {
         return students;
     }
 
 
-
+    /**
+     * Gets nr objs to display.
+     *
+     * @return the nr objs to display
+     */
     public int getNrObjsToDisplay() {
         int nrObjsToDisplay = 0;
 
@@ -75,7 +100,11 @@ public class StudentManager {
     }
 
 
-
+    /**
+     * Display students.
+     *
+     * @param nrObjsToDisplay the nr objs to display
+     */
     public void displayStudents(int nrObjsToDisplay) {
         try {
             // Validate nrObjsToDisplay

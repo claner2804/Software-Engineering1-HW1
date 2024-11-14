@@ -1,7 +1,15 @@
 package at.mci.claudiasteiner.week3.exercise2;
 import at.mci.claudiasteiner.week3.exercise2.ChemicalElementManager;
 
+/**
+ * The type Main.
+ */
 public class Main {
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
 
         // Singleton Pattern

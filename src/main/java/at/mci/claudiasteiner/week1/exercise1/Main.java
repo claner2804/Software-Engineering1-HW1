@@ -1,8 +1,16 @@
 package at.mci.claudiasteiner.week1.exercise1;
 
+/**
+ * The type Main.
+ */
 public class Main {
 
-    //public static void main is the entry point
+    /**
+     * Main.
+     *
+     * @param args the args
+     */
+//public static void main is the entry point
     //you can always call static methods even if you do not have objects
     //psvm is a static data member of the Main class
     public static void main(String[] args){

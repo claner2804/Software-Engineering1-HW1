@@ -1,13 +1,25 @@
 package at.mci.claudiasteiner.week3.exercise3;
 import java.time.LocalTime;
 
+/**
+ * The type Drink factory.
+ */
 public class DrinkFactory {
 
+    /**
+     * Instantiates a new Drink factory.
+     */
     public DrinkFactory() {
         System.out.println("DrinkFactory created");
     }
 
-    // Factory-Methode zum Erstellen des richtigen Getränks basierend auf der Tageszeit
+    /**
+     * Create drink drink.
+     *
+     * @param currentTime the current time
+     * @return the drink
+     */
+// Factory-Methode zum Erstellen des richtigen Getränks basierend auf der Tageszeit
     public Drink createDrink(LocalTime currentTime) {
         int hour = currentTime.getHour();
 

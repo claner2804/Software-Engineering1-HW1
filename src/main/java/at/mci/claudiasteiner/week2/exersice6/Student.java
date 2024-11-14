@@ -7,13 +7,30 @@ import java.util.*;
  * Die Klasse Student repräsentiert einen Studenten mit spezifischen Eigenschaften wie Name,
  * Gruppe, Java-Kenntnisse, Geschlecht und Noten.
  */
-
 public class Student {
+    /**
+     * The Name.
+     */
     protected String name;
+    /**
+     * The Group.
+     */
     protected String group;
+    /**
+     * The Proficiency in java.
+     */
     protected int proficiencyInJava;
+    /**
+     * The Student id.
+     */
     protected int studentID;
+    /**
+     * The Gender.
+     */
     protected String gender;
+    /**
+     * The constant counter.
+     */
     public static int counter = 0;
 
     //Exercise 6
@@ -31,7 +48,10 @@ to input numeric values
  */
 
 
-    //Input-Validating Constructor
+    /**
+     * Instantiates a new Student.
+     */
+//Input-Validating Constructor
     public Student() {
 
         // Exercise 6: Using Scanner for Getting Input from User
@@ -102,19 +122,16 @@ to input numeric values
     }
 
 
-
-
-
     /**
      * Konstruktor, der alle Datenfelder eines Studenten initialisiert.
      *
-     * @param name der Name des Studenten
-     * @param group die Gruppe des Studenten
+     * @param name              der Name des Studenten
+     * @param group             die Gruppe des Studenten
      * @param proficiencyInJava die Java-Kenntnisse des Studenten
-     * @param studentID die Studenten-ID
-     * @param gender das Geschlecht des Studenten
+     * @param studentID         die Studenten-ID
+     * @param gender            das Geschlecht des Studenten
      */
-    //Constructor
+//Constructor
     public Student(String name, String group, int proficiencyInJava, int studentID, String gender) {
         this.name = name;
         this.group = group;
@@ -134,54 +151,109 @@ to input numeric values
      *
      * @param grade die Note, die hinzugefügt wird
      */
-    // Method to add a grade
+// Method to add a grade
     public void addGrade(int grade) {
         grades.add(grade);
     }
 
 
-    // Getter for grades
+    /**
+     * Gets grades.
+     *
+     * @return the grades
+     */
+// Getter for grades
     public List<Integer> getGrades() {
         return grades;
     }
 
 
+    /**
+     * Gets name.
+     *
+     * @return the name
+     */
     public String getName() {
         return name;
     }
 
+    /**
+     * Sets name.
+     *
+     * @param name the name
+     */
     public void setName(String name) {
         this.name = name;
     }
 
+    /**
+     * Gets group.
+     *
+     * @return the group
+     */
     public String getGroup() {
         return group;
     }
 
+    /**
+     * Sets group.
+     *
+     * @param group the group
+     */
     public void setGroup(String group) {
         this.group = group;
     }
 
+    /**
+     * Gets proficiency in java.
+     *
+     * @return the proficiency in java
+     */
     public int getProficiencyInJava() {
         return proficiencyInJava;
     }
 
+    /**
+     * Sets proficiency in java.
+     *
+     * @param proficiencyInJava the proficiency in java
+     */
     public void setProficiencyInJava(int proficiencyInJava) {
         this.proficiencyInJava = proficiencyInJava;
     }
 
+    /**
+     * Gets student id.
+     *
+     * @return the student id
+     */
     public int getStudentID() {
         return studentID;
     }
 
+    /**
+     * Sets student id.
+     *
+     * @param studentID the student id
+     */
     public void setStudentID(int studentID) {
         this.studentID = studentID;
     }
 
+    /**
+     * Gets gender.
+     *
+     * @return the gender
+     */
     public String getGender() {
         return gender;
     }
 
+    /**
+     * Sets gender.
+     *
+     * @param gender the gender
+     */
     public void setGender(String gender) {
         this.gender = gender;
     }
@@ -197,7 +269,13 @@ to input numeric values
     }
 
 
-    //Exercise4
+    /**
+     * Has same fluency in java as boolean.
+     *
+     * @param anotherStudent the another student
+     * @return the boolean
+     */
+//Exercise4
     public boolean hasSameFluencyInJavaAs(at.mci.claudiasteiner.week1.exercise2.Student anotherStudent) {
         if(this.proficiencyInJava != anotherStudent.getProficiencyInJava()) {
             System.out.println("nah bihhh " + this.name + " and " + anotherStudent.getName() + " dont matchhh");
@@ -230,7 +308,7 @@ to input numeric values
      *
      * @return die Durchschnittsnote als float, oder 0, wenn keine Noten vorhanden sind
      */
-    //Exercise 6
+//Exercise 6
     //Method to calculate the average grade
     public float averageNote() {
         if (grades.isEmpty()) {

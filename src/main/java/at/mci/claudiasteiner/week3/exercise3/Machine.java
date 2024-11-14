@@ -3,6 +3,9 @@ package at.mci.claudiasteiner.week3.exercise3;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 
+/**
+ * The type Machine.
+ */
 public class Machine {
 
     private LocalTime currentTime;  // Zum Speichern der aktuellen Uhrzeit
@@ -19,6 +22,11 @@ public class Machine {
         System.out.println("Machine created with current time: " + currentTime);
     }
 
+    /**
+     * Get instance machine.
+     *
+     * @return the machine
+     */
     public static Machine getInstance(){
         if(instance == null){
             instance = new Machine();
@@ -30,7 +38,10 @@ public class Machine {
     }
 
 
-    // Die Factory-Methode createDrink entscheidet, basierend auf der aktuellen Uhrzeit (currentTime),
+    /**
+     * Dispense drink.
+     */
+// Die Factory-Methode createDrink entscheidet, basierend auf der aktuellen Uhrzeit (currentTime),
     // welches Getränk erzeugt werden soll
     public  void dispenseDrink() {
         LocalTime currentTime = LocalTime.now();

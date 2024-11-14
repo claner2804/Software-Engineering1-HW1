@@ -2,7 +2,15 @@ package at.mci.claudiasteiner.week1.exercise3;
 
 import at.mci.claudiasteiner.week1.exercise2.Student;
 
+/**
+ * The type Test student.
+ */
 public class TestStudent {
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
 
         Student claudia = new Student();

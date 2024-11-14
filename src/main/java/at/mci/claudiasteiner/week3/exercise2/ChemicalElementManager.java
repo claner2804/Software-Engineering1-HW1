@@ -4,6 +4,9 @@ import at.mci.claudiasteiner.week3.exercise2.ChemicalElement;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * The type Chemical element manager.
+ */
 public class ChemicalElementManager {
 
     private static ChemicalElementManager INSTANCE = null;
@@ -19,6 +22,11 @@ public class ChemicalElementManager {
         System.out.println("ChemicalElementManager constructor");
     }
 
+    /**
+     * Gets instance.
+     *
+     * @return the instance
+     */
     public static ChemicalElementManager getInstance() {
         if (INSTANCE == null) {
             INSTANCE = new ChemicalElementManager();
@@ -31,7 +39,12 @@ public class ChemicalElementManager {
     }
 
 
-    // Methode zum Hinzufügen eines ChemicalElement-Objekts zur HashMap
+    /**
+     * Add element.
+     *
+     * @param element the element
+     */
+// Methode zum Hinzufügen eines ChemicalElement-Objekts zur HashMap
     public void addElement(ChemicalElement element) {
         if (element != null && !elements.containsKey(element.getSymbol())) {
             elements.put(element.getSymbol(), element);
@@ -41,18 +54,35 @@ public class ChemicalElementManager {
         }
     }
 
-    // Methode zum Abrufen eines Elements
+    /**
+     * Gets element.
+     *
+     * @param symbol the symbol
+     * @return the element
+     */
+// Methode zum Abrufen eines Elements
     public ChemicalElement getElement(String symbol) {
         return elements.get(symbol);
     }
 
-    // Methode zum Entfernen eines Elements
+    /**
+     * Remove element chemical element.
+     *
+     * @param symbol the symbol
+     * @return the chemical element
+     */
+// Methode zum Entfernen eines Elements
     public ChemicalElement removeElement(String symbol) {
         return elements.remove(symbol);
     }
 
 
-    // Abrufen und Ausgeben eines Elements anhand des Symbols
+    /**
+     * Display element.
+     *
+     * @param symbol the symbol
+     */
+// Abrufen und Ausgeben eines Elements anhand des Symbols
     public void displayElement(String symbol) {
         ChemicalElement element = getElement(symbol);
         if (element != null) {

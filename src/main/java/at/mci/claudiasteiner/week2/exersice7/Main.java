@@ -1,7 +1,15 @@
 package at.mci.claudiasteiner.week2.exersice7;
 
 
+/**
+ * The type Main.
+ */
 public class Main {
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
         StudentManager manager = new StudentManager(); // Create an instance of StudentManager
 
