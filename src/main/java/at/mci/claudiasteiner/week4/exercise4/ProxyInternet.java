@@ -1,5 +1,8 @@
 package at.mci.claudiasteiner.week4.exercise4;
 
+/**
+ * The type Proxy internet.
+ */
 // should include logic to check URLs against a blacklist and decide whether to forward the request to RealInternet or deny it.
 public class ProxyInternet implements Internet {
 

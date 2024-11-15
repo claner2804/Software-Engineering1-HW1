@@ -4,12 +4,20 @@ import java.io.FilterInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
+/**
+ * The type Masking input stream.
+ */
 public class MaskingInputStream extends FilterInputStream {
 
     // Zu maskierende Zeichen
     private static final char[] MASK_CHARACTERS = {'a', 'e', 'z'};
 
-    // Konstruktor, der den InputStream annimmt
+    /**
+     * Instantiates a new Masking input stream.
+     *
+     * @param in the in
+     */
+// Konstruktor, der den InputStream annimmt
     protected MaskingInputStream(InputStream in) {
         super(in);
     }
