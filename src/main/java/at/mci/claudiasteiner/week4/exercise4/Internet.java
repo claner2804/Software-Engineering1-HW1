@@ -9,5 +9,5 @@ public interface Internet {
      *
      * @param host the host
      */
-    public void connectTo(String host);
+    void connectTo(String host);
 }
