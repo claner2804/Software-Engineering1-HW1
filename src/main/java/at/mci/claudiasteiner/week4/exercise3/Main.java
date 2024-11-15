@@ -1,6 +1,14 @@
 package at.mci.claudiasteiner.week4.exercise3;
 
+/**
+ * The type Main.
+ */
 public class Main {
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
 
                 // Einzelne Mitarbeiter erstellen

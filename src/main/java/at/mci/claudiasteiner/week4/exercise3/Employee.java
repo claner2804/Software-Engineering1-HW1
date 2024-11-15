@@ -7,10 +7,18 @@ package at.mci.claudiasteiner.week4.exercise3;
 // Component-Schnittstelle.
 
 
+/**
+ * The type Employee.
+ */
 public class Employee implements Directory {
     private final String name;
 
 
+    /**
+     * Instantiates a new Employee.
+     *
+     * @param name the name
+     */
     public Employee(String name) {
         this.name = name;
     }

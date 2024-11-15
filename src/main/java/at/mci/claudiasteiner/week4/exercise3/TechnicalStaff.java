@@ -9,8 +9,16 @@ package at.mci.claudiasteiner.week4.exercise3;
 // untergeordnete Komponenten dar.
 
 
+/**
+ * The type Technical staff.
+ */
 public class TechnicalStaff extends EmployeeGroup {
 
+    /**
+     * Instantiates a new Technical staff.
+     *
+     * @param name the name
+     */
     public TechnicalStaff(String name) {
 
         //super(name); ruft den Konstruktor der Superklasse auf und übergibt

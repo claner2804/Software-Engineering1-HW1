@@ -11,7 +11,13 @@ package at.mci.claudiasteiner.week4.exercise3;
 // auf dieselbe Weise behandeln zu können.
 
 
+/**
+ * The interface Directory.
+ */
 public interface Directory {
+    /**
+     * Print information.
+     */
     void printInformation();
 }
 
