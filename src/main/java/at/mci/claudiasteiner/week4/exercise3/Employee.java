@@ -8,7 +8,7 @@ package at.mci.claudiasteiner.week4.exercise3;
 
 
 public class Employee implements Directory {
-    private String name;
+    private final String name;
 
 
     public Employee(String name) {

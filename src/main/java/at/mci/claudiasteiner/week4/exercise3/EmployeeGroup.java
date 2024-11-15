@@ -7,7 +7,7 @@ import java.util.List;
 // Stattdessen dient sie als Basis für andere Klassen, die von ihr erben.
 
 public abstract class EmployeeGroup implements Directory {
-    private String name;
+    private final String name;
     private List<Directory> employees = new ArrayList<>();
 
     public EmployeeGroup(String name) {
