@@ -23,6 +23,7 @@ public class Main {
                 .setSize("Medium")
                 .setTemperature("Cold")
                 .addSugar()
+                .addCream()
                 .build();
 
 

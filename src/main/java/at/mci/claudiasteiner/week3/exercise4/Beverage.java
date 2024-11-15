@@ -4,12 +4,12 @@ package at.mci.claudiasteiner.week3.exercise4;
  * The type Beverage.
  */
 public class Beverage {
-    private String type; // z. B. Kaffee, Tee
-    private String size; // z. B. klein, mittel, groß
-    private String temperature; // z. B. heiß, warm, kalt
-    private boolean hasMilk;
-    private boolean hasCream;
-    private boolean hasSugar;
+    private final String type; // z. B. Kaffee, Tee
+    private final String size; // z. B. klein, mittel, groß
+    private final String temperature; // z. B. heiß, warm, kalt
+    private final boolean hasMilk;
+    private final boolean hasCream;
+    private final boolean hasSugar;
 
     // Privater Konstruktor
     private Beverage(BeverageBuilder builder) {
