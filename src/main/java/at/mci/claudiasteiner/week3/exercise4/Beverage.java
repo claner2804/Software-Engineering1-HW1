@@ -66,7 +66,7 @@ public class Beverage {
         /**
          * Sets temperature.
          *
-         * @param temperature the temperature
+         * @param temperure the temperature
          * @return the temperature
          */
         public BeverageBuilder setTemperature(String temperature) {
