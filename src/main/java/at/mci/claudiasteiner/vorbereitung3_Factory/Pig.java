@@ -1,4 +1,4 @@
-package at.mci.claudiasteiner.vorbereitung3;
+package at.mci.claudiasteiner.vorbereitung3_Factory;
 
 public class Pig implements Animal {
     //Rasse, Gewicht (in Kilogramm), Alter (in Monaten).

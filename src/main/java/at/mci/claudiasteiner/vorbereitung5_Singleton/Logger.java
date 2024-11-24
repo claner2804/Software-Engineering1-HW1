@@ -1,4 +1,4 @@
-package at.mci.claudiasteiner.vorbereitung5;
+package at.mci.claudiasteiner.vorbereitung5_Singleton;
 
 import java.util.List;
 import java.util.ArrayList;

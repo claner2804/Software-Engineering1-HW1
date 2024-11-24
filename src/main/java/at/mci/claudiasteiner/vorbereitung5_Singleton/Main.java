@@ -1,4 +1,4 @@
-package at.mci.claudiasteiner.vorbereitung5;
+package at.mci.claudiasteiner.vorbereitung5_Singleton;
 
 
 public class Main {
