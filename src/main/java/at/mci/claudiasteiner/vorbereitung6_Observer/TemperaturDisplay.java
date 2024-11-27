@@ -10,6 +10,7 @@ public class TemperaturDisplay implements Observer {
         weatherStation.addObserver(this);
     }
 
+
     @Override
     public void update() {
         float temperature = weatherStation.getTemperature();
@@ -18,5 +19,8 @@ public class TemperaturDisplay implements Observer {
         System.out.println("Der Temperatur Display wurde upgedatet: ");
         System.out.println("Aktuelle Temperatur: " + temperature + "°C");
         System.out.println("************************************ \n ");
+
+
+
     }
 }
