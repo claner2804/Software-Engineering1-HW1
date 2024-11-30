@@ -14,7 +14,7 @@ public class Main {
                 new TaxiFactory(),
                 new CreditCardPayment()
         );
-        innsbruckAirport.bookRide("Innsbruck Airport", "City Center", 25.0);
+        innsbruckAirport.bookRide("Innsbruck Airport", "City Center", 35.0);
 
         //Las Vegas Helicopter with PayPal
         AirportContext lasVegasAirport = new AirportContext(
@@ -22,7 +22,7 @@ public class Main {
                 new HelicopterFactory(),
                 new PayPalPayment()
         );
-        lasVegasAirport.bookRide("Las Vegas Airport", "City Center", 150.0);
+        lasVegasAirport.bookRide("Las Vegas Airport", "City Center", 123.4);
 
         //Venice Vaporetto with Bank Transfer
         AirportContext veniceAirport = new AirportContext(
@@ -30,7 +30,7 @@ public class Main {
                 new VaporettoFactory(),
                 new BankTransferPayment()
         );
-        veniceAirport.bookRide("Venice Airport", "City Center", 35.0);
+        veniceAirport.bookRide("Venice Airport", "City Center", 52.0);
 
         //Jakarta Motorbike with Credit Card
         AirportContext jakartaAirport = new AirportContext(
